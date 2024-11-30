@@ -30,7 +30,9 @@ export default function TabLayout() {
         name="index"
         options={{
           title: 'Tab One',
-          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
+          headerShown:false,
+         tabBarShowLabel: false,
+          tabBarIcon: ({ color }) => <TabBarIcon name="home" color={color} />,
           headerRight: () => (
             <Link href="/modal" asChild>
               <Pressable>
@@ -51,6 +53,15 @@ export default function TabLayout() {
         name="two"
         options={{
           title: 'Tab Two',
+          headerShown: false,
+          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color}
+           />,
+        }}
+      />
+      <Tabs.Screen
+        name="threes"
+        options={{
+          title: 'Tab three',
           tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
         }}
       />
