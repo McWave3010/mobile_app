@@ -2,6 +2,13 @@
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
     "strict": true,
+    "jsx": "react-native", // Use the appropriate JSX setting for React Native
+    "allowJs": true,       // Allow JavaScript files if needed
+    "target": "esnext",    // Set ECMAScript target version
+    "module": "esnext",    // Use ES module system        // Enable strict type checking
+    "skipLibCheck": true,  // Skip type checking of declaration files
+    "moduleResolution": "node", // Resolve node modules
+    "noEmit": true ,   
     "paths": {
       "@/*": [
         "./*"
@@ -12,6 +19,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".expo/types/**/*.ts",
-    "expo-env.d.ts"
+    "expo-env.d.ts",
+    "nativewind-env.d.ts"
   ]
 }
